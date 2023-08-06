@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<style>
+    body {
+        background-image: url("pics/bg.jpg");
+        background-size: 100% auto;
+    }
+
+    header {
+        background-color: black;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 8vh;
+    }
+
+    .logo {
+        display: flex;
+        height: 6vh;
+        padding: 5px;
+        margin-right: 30vw;
+
+    }
+
+    .logo:hover {
+        height: 20vh;
+    }
+
+    nav ul {
+        display: flex;
+        float: left;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 2px 40px 2px 70px;
+    }
+
+    nav ul li {
+        list-style: none;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    ul li a:hover {
+        font-size: larger;
+    }
+
+    main {
+        height: 81vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .head {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        size: 28px;
+        justify-content: center;
+        align-items: center;
+        height:20vh ;
+    }
+
+    .one {
+        display: flex;
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 20%;
+        height: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        margin: 10px;
+    }
+
+    .two {
+        display: flex;
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 20%;
+        height: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(14, 119, 240);
+        margin: 10px;
+    }
+
+    .three {
+        display: flex;
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 20%;
+        height: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        margin: 10px;
+    }
+
+    button {
+        width: 10vw;
+        height: 3vh;
+        color: white;
+        background-color: orangered;
+    }
+
+    button:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .container {
+        display: flex;
+        width: 80vw;
+        height: 40vh;
+        background-color: rgba(255, 255, 255, 0.2);
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+    }
+
+    .container img {
+        height: 10vh;
+    }
+
+    img:hover {
+
+        height: 15vh;
+    }
+
+
+    footer {
+        display: flex;
+        background-color: black;
+        color: white;
+        height: 6vh;
+        width: 100%;
+    }
+
+    footer p {
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="bar">
+            <nav>
+                <div class="logo">
+                    <img src="pics/logo.png" alt="logo">
+                </div>
+
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="head">
+            <h1 id="element"></h1>
+        </div>
+        <div class="container">
+
+            <div class="one">
+                <a href="https://github.com/Maham-Fatima" target="_blank"><img src="pics/github.png" alt="github logo"
+                        class="git"></a>
+                <button id="gh">GitHub</button>
+            </div>
+            <div class="two">
+                <a href="https://www.linkedin.com/in/maham-fatima-517a98284/" target="_blank"><img
+                        src="pics/linkedin.png" alt="linkdin logo" class="link"></a>
+                <button id="l">LinkDin</button>
+            </div>
+            <div class="three">
+                <a href="mailto:fmaham599@gmail.com" target="_blank"><img src="pics/Gmail-logo.png" alt="Gmail"
+                        class="mail"></a>
+                <button id="g">Gmail</button>
+
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>copywright 2023</p>
+    </footer>
+
+    <script>
+        //github button
+        document.getElementById("gh").addEventListener('click', function (event) {
+            console.log(document.getElementsByClassName("git")[0].getAttribute("href"));
+            window.open("https://github.com/Maham-Fatima", '_blank')
+        });
+        //linkedin button
+        document.getElementById("l").addEventListener('click', function (event) {
+            window.open("https://www.linkedin.com/in/maham-fatima-517a98284/", '_blank')
+        });
+        //gmail
+        document.getElementById("g").addEventListener('click', function (event) {
+            window.open("mailto:fmaham599@gmail.com", '_blank')
+        });
+        //type scripting
+        var typed = new Typed('#element', {
+            strings: ['contact me', 'explore my projects', 'make connection'],
+            typeSpeed: 50,
+            loop: Infinity,
+          });
+    </script>
+</body>
+
+</html>
