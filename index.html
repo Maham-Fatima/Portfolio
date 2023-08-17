@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="/js/indexjs.js"></script>
+    <link rel="stylesheet" href="css/indexstyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="bar">
+            <nav>
+                <div class="logo">
+                    <img src="pics/logo.png" alt="logo">
+                </div>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <div class="clock">
+            <div class="clock-content">
+                <h1 class="h" id="element"></h1>
+                <div class="cursor"></div>
+            </div>
+            <div class="clock-time">
+                <p class="display"></p>
+            </div>
+        </div>
+
+
+        <div class="education">
+            <h1>Education</h1>
+            <ul>
+                <li><b>University</b> - Fast University of Karachi, Batch 2021, SE Department, Current CGPA: 3.67</li>
+                <li><b>College</b> - Govt. Degree college Malir Cantt, percentage: 94.5</li>
+            </ul>
+        </div>
+        <div class="interest">
+            <h1>Interests</h1>
+
+            <ul>
+                <li>Full stack Web development</li>
+                <li>Data Science</li>
+                <li>Artificial intelligence</li>
+            </ul>
+        </div>
+        <div class="pl">
+            <h1>Languages</h1>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Html</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+
+    </main>
+    <footer>
+        <p>copywright 2023</p>
+    </footer>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Hello Everyone', 'Welcome to My Portfolio', 'I am Maham Fatima'],
+            typeSpeed: 50,
+            loop: Infinity,
+        });
+    </script>
+</body>
+
+</html>

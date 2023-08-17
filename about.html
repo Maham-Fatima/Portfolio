@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the developer</title>
+    <link rel="stylesheet" href="/css/aboutstyle.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="bar">
+            <nav>
+                <div class="logo">
+                    <img src="pics/logo.png" alt="logo">
+                </div>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="head">
+            <h1 id="element"></h1>
+        </div>
+
+        <div class="container">
+            <img src="pics/profile.png" alt="profile pic" class="profile">
+            <p class="About">
+                This is Maham Fatima, the developer of this mini project.I am a student of the University of Fast NUCES
+                Batch 2021
+                SE department. This project is a beginner friendly project, made for practice purpose only.
+            </p>
+        </div>
+
+    </main>
+    <footer>
+        <p>copywright 2023</p>
+    </footer>
+  <script>
+    var typed = new Typed('#element', {
+        strings: ['About me', 'Website developer', 'Python programmer', 'Java programmer'],
+        typeSpeed: 50,
+        loop: Infinity,
+    });    
+  </script>
+</body>
+
+</html>
